@@ -1,0 +1,35 @@
+<%= form_for @post, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="form-group">
+    <%= f.label :imagem, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= image_tag "face.jpg" %>
+      <%= f.hidden_field :imagem, :class => 'text_field form-control', :value => image_url("face.jpg") %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :autor, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :autor, :class => 'text_field form-control', :value => "João Teste" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :token, :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_field :token, :class => 'text_field form-control', :placeholder => "Informe seu token. Consulte o console do Xcode para pegar este dado." %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label "Comentário", :class => 'control-label col-md-2' %>
+    <div class="col-md-10">
+      <%= f.text_area :comments, :class => 'text_field form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class='col-md-offset-2 col-md-10'>
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                  posts_path, :class => 'btn btn-default' %>
+    </div>
+  </div>
+<% end %>
