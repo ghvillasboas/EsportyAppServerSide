@@ -3,6 +3,8 @@ Esporty App Server Side
 
 Este é o server side (lado servidor) do código exemplo apresentado na [Trilha iOS do TDC SP 2014](http://www.thedevelopersconference.com.br/tdc/2014/saopaulo/trilha-ios), Melhorando a experiência do usuário usando Background Fetching, por [George Villasboas](https://twitter.com/ghvillasboas).
 
+**A keynote da talk, em PDF, pode ser [baixada aqui](https://drive.google.com/file/d/0B0KwdWz7zxc2a0QwNjRmb2ZYQzg/edit?usp=sharing)**
+
 Ele serve para simular um serviço remoto usado para alimentar o aplicativo Esporty (App fictício de compartilhamento de fotos de esportes radicais) e enviar Remote Notifications para mostrar o funcionamento de background fetches.
 
 ## Como instalar
