@@ -13,7 +13,7 @@ Ele serve para simular um serviço remoto usado para alimentar o aplicativo Espo
 
 3. Crie os seus certificados de push notification no Apple Developer Portal. Instruções de como gerar o arquivo .pem, você pode encontrar aqui: https://github.com/jpoz/APNS (em inglês).
 
-4. Mova o arquivo *certs.pem* para a pasta /config/apple_apns/ do repositório clonado. Caso decida colocar outro nome no seu arquivo .pem, lembre-se de atualizar o arquivo /app/controlers/posts_controller.rb (linha 111).
+4. Mova o arquivo *certs.pem* para a pasta /config/apple_apns/ do repositório clonado. Caso decida colocar outro nome no seu arquivo .pem, lembre-se de atualizar o arquivo /app/controlers/posts_controller.rb ([linha 111](https://github.com/ghvillasboas/EsportyAppServerSide/blob/master/app/controllers/posts_controller.rb#L111)).
 
 4. Via terminal acesse o diretório do repositório clonado
 
@@ -56,7 +56,7 @@ Ele serve para simular um serviço remoto usado para alimentar o aplicativo Espo
 ## Dicas
 
 - Caso o remote notification não chegue, verifique se os certificados foram gerados corretamente.
-- Teste o serviço de push, usando um Push Notification comum, comentando a linha 114 do arquivo /app/controlers/posts_controller.rb e descomentando a linha (linha 117). Crie um novo post. Isto fará com que o serviço envie um push comum ao invés de um push silencioso. Descomente/comente novamente as linhas para usar o push remoto.
+- Teste o serviço de push, usando um Push Notification comum, comentando a [linha 114](https://github.com/ghvillasboas/EsportyAppServerSide/blob/master/app/controllers/posts_controller.rb#L114) do arquivo /app/controlers/posts_controller.rb e descomentando a [linha 117](https://github.com/ghvillasboas/EsportyAppServerSide/blob/master/app/controllers/posts_controller.rb#L117). Crie um novo post. Isto fará com que o serviço envie um push comum ao invés de um push silencioso. Descomente/comente novamente as linhas para usar o push remoto.
 
 ## Configuração testada
 
